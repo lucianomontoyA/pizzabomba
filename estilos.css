@@ -65,16 +65,26 @@ button{ background-color: tomato;
         border: 0;
         padding: 1rem 1.5rem ;
         border-radius: 0.2rem;
-    }
-.parrafo{
+        animation-name: movimiento;
+        transition: 5s;}
+@keyframes movimiento  {
+    25% {background-color: yellow; transform: translate (105%) ;}
+    50% {background-color: rgb(0, 255, 34) ; transform: translate(110%) ; }
+    75% {background-color: red;}
+    100%{background-color: black;} }
+
+
+.parrafo {
     grid-area: parrafo;
     display: flex;
     flex-direction: row;
     text-align: center;
     background-color: black;
-    color: aliceblue;
-    }
+    color:aliceblue;
+    background-color: black}
+
 .quienessomos{display: flex;}
+
 .pizza1 { grid-area: pizza1;
     background-size: cover;
     text-align: center;
@@ -92,8 +102,20 @@ button{ background-color: tomato;
     }
 .foto1 { grid-area: foto1;
         background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_imtZQh_PRzc9DFxpxjh2QmKAuMNHIxR-PQ&usqp=CAU); 
-        }
-.foto2 { grid-area: foto2; background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr9ye_eSTelFxyd-nDo6DuLRk2g7vOv3EAdw&usqp=CAU); }
+        transition: 3s;
+    }
+
+.foto1:hover {
+    transition: 3s ;
+    transform: scale(110%,110%);      
+}
+.foto2 { grid-area: foto2; background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr9ye_eSTelFxyd-nDo6DuLRk2g7vOv3EAdw&usqp=CAU);
+    transition: 3s; }
+
+.foto2:hover {
+        transition: 3s ;
+        transform: scale(110%,110%);}
+
 .pizza2 { grid-area: pizza2;
     background-size: cover;
     text-align: center;
@@ -108,6 +130,7 @@ button{ background-color: tomato;
     background-color: rgb(14, 13, 13);
     background-repeat: no-repeat;
     background-attachment: fixed;}
+
 .pizza3 {
      grid-area: pizza3;
      background-size: cover;
@@ -123,10 +146,20 @@ button{ background-color: tomato;
     background-color: rgb(14, 13, 13);
     background-repeat: no-repeat;
     background-attachment: fixed; }
+
 .foto3 { grid-area: foto3;
-        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrXNU27KLHTCtuwKn4n16T4hdIF8pAAp7W0A&usqp=CAU); }
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrXNU27KLHTCtuwKn4n16T4hdIF8pAAp7W0A&usqp=CAU);
+        transition: 3s; }
+.foto3:hover {
+            transition: 3s ;
+            transform: scale(110%,110%);}
+
 .foto4 { grid-area: foto4; 
-        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH3cbRtlb70j9M3UhMu033J1bvAL4X0OlgBA&usqp=CAU);}
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH3cbRtlb70j9M3UhMu033J1bvAL4X0OlgBA&usqp=CAU);
+        transition: 3s;}
+.foto4:hover {
+            transition: 3s ;
+            transform: scale(110%,110%);}
 .pizza-4 { grid-area: pizza-4;
     background-size: cover;
     text-align: center;
@@ -156,7 +189,12 @@ button{ background-color: tomato;
     background-repeat: no-repeat;
     background-attachment: fixed;  }
 .foto5 { grid-area: foto5;
-background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQur-ZjYMHZ0MhQyDx6cbW-mGSyVZs083qSDA&usqp=CAU); }
+background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQur-ZjYMHZ0MhQyDx6cbW-mGSyVZs083qSDA&usqp=CAU);
+transition: 3s; }
+.foto5:hover {
+    transition: 3s ;
+    transform: scale(110%,110%);}
+
 .footer { grid-area: footer;
     background-size: cover;
     text-align: center;
